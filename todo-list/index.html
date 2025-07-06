@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="icon" href="logo2.avif">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+  <div class="todo-container">
+    <h1><i class="fas fa-tasks"></i> To-Do List</h1>
+
+    <div class="counters">
+      <div><i class="fa-solid fa-spinner" style="color: #fa0000;"></i> TASKS: <span id="pending-count">0</span></div>
+      <div><i class="fa-solid fa-circle-check" style="color: #3ede12;"></i> COMPLETED: <span id="completed-count">0</span></div>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <button onclick="addTask()"><i class="fa-solid fa-plus"></i>Add</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
